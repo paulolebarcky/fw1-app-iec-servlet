@@ -1,0 +1,10 @@
+1;Televisão 42 polegadas;1999.00
+2;DVD Automotivo Pioneer AVH-X2780BT Tela 6,2 Bluetooth;999.00
+3;Notebook Dell;1699.00
+4;Máquina de lavar Brastemp;999.00
+5;Ar condicionado LG;999.00
+6;Smartphone LG;899.00
+7;Fritadeira Air Fryer Elétrica Mondial;99.00
+8;Tablet Dell Venue 7 8GB Tela 7" 3G;699.00
+9;Multifuncional Epson XP214 Colorida;251.00
+10;Chopeira Seven Beer 7L - Mariz;169.00

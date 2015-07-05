@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Compra de Produtos</title>
+	<link href="css/my.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        
+        function clear() {document
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</head>
+<body>
+	<h1>Compra de Produtos</h1>
+    <form id="myForm" action="./ProdutoServlet" method="post">
+	
+<!--		Cod. Item: <input type="text" name="codProduto"><br/>-->
+        <br/>
+        <h2>Selecione o produto e informe a quantidade:</h2>
+        Produto:  
+        <select name="codProduto">
+            <option value="1">Televisão 42 polegadas - R$1999,00</option>
+            <option value="2">DVD Automotivo Pioneer AVH-X2780BT Tela 6,2" - Bluetooth - R$999,00</option>
+            <option value="3">Notebook Dell - R$1699,00</option>
+            <option value="4">Máquina de lavar Brastemp -R$999,00</option>
+            <option value="5">Ar condicionado LG - R$999,00</option>
+            <option value="6">Smartphone LG - R$899,00</option>
+            <option value="7">Fritadeira Air Fryer Elétrica Mondial - R$99,00</option>
+            <option value="8">Tablet Dell Venue 7 8GB Tela 7" 3G - R$699,00</option>
+            <option value="9"> Multifuncional Epson XP214 Colorida - R$251,00</option>
+            <option value="10">Chopeira Seven Beer 7L - Mariz - R$169,00</option>
+        </select>
+        Quantidade: <input type="text" name="qtde" maxlength="2" ><br/>		
+		<hr>
+        <h2>Dados do comprador</h2>
+        <table border="0">
+                <tr>
+                    <th class="labelTable" >Nome:</th>
+                    <th class="fieldTable"><input type="text" size="27" name="nomeProduto"></th>
+                </tr>
+                <tr>
+                    <th class="labelTable">Endereço de Entrega:</th>
+                    <th class="fieldTable"><textarea name="endereco" rows=3 cols=40></textarea></th>
+                </tr>
+            </table>
+        
+        
+   		<hr>
+        <h2>Dados do pagamento</h2>
+		Cartão de crédito:
+		<input type="radio" name="tipoCartao" value="Visa">Visa
+		<input type="radio" name="tipoCartao" value="Master">Master
+		<input type="radio" name="tipoCartao" value="Amex">American Express
+		<input type="radio" name="tipoCartao" value="Discover">Discover<br/><br/>
+		Número do cartão: <input type="text" name="numCartao">
+		Repita o número do cartão: <input type="text" name="numCartaoConf"><br/><br/>
+   		<hr>
+
+		<center> 
+            <input type="submit" style="width: 200px;height: 40px;" value="Enviar pedido">
+            <input type="button" onclick="document.getElementById('myForm').reset()" style="width: 200px;height: 40px;" value="Cancelar">
+		</center>
+	</form>
+</body>
+</html>
+

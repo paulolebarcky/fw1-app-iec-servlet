@@ -1,0 +1,18 @@
+body {
+    /*	background-color: #FFF009;*/
+    background-color: azure;
+}
+
+h1 {
+    text-align: center;
+}
+
+.labelTable {
+    text-align: right;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+.fieldTable {
+    text-align: left;
+}
